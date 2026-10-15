@@ -39,3 +39,9 @@ jobs:
           name: production-ready-jar
           path: target/*.jar
           retention-days: 5
+    - name: Upload Build Artifact for Verification
+      uses: actions/upload-artifact@v4
+      with:
+        name: production-ready-jar
+        path: target/*.jar
+        retention-days: 5
